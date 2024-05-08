@@ -1,0 +1,26 @@
+body{
+    color: #616161;
+    font-family: PlusJakartaSans, sans-serif;
+    font-size: 25sp;
+    background-color: rgba(236, 216, 198, .4);
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+h2{
+    color:#616161;
+}
+p{
+    position: relative;
+}
+
+img{
+    position: absolute;
+}
+
