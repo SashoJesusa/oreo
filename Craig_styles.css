@@ -12,29 +12,108 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.container{
+    margin: 10ex auto;
+    width: 100%;}
 p{
     position: relative;
     margin-bottom: 32px;
-    width: 45em;
-    font-size: 100ex;
+    max-width: 40em;
+    max-width: 50em;
+    text-align: left;
 }
 img {
-    max-width: 65ex; 
+    max-width: 500ex; 
     float: right;
     border-radius: 1ex;
     border: 0.3ex solid white;
-    margin-right: 2ex;
+    margin-right: 25ex;
+    max-height: 500ex;
     }
     
     .text h1{
-        font-size: 7ex;
-        padding: 0.5ex;
+        font-size: 5ex;
+        padding: 1ex;
+        width: 10ex;
     }
     .text h2{
         font-size: 5ex;
         margin-right: 2ex;
     }
     .text p{
-      font-size: 1.9ex;
+      font-size: 3.3ex;
     }    
+
+    ul{
+        list-style: none;
+        background: rgb(236, 216, 198);
+        position: relative;
+    }
+    
+    ul li{
+        display: block;
+        position: relative;
+        padding-top: 2.5ex;
+        padding-bottom: 2.5ex;
+        padding-right: 2ex;
+        padding-left: 2ex;
+    }
+    
+    
+    ul li a{
+        display: block;
+        padding: 2ex 2,5ex;
+        color: #454141;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    
+    
+    ul li ul.dropdown li{
+        display: block;
+        font-size: 3,5ex;
+    }
+    
+    ul li ul.dropdown{
+        width: 100%;
+        background: rgba(241, 208, 179, 0.4);
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    
+    ul li a:hover{
+        color: #966f49;
+    }
+    
+    h3:hover{
+        color: #966f49;
+    }
+    
+    ul li:hover ul.dropdown{
+        display: block;
+        background: rgb(236, 216, 198);
+    }
+
+    #list {
+        list-style: none;
+        padding-left: 0; 
+    }
+
+    #list li{
+        position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+
+    }
+
+    #list li::before{
+        content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px; 
+    height: 1px; 
+    background-color: black;
+    }
