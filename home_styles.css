@@ -4,12 +4,25 @@
     font-family: serif;
 }
 
+img.logo{
+    z-index: 999;
+    padding-top: 1.5ex;
+    padding-bottom: 1ex;
+}
+
 body{
     color: #616161;
     font-family: PlusJakartaSans, sans-serif;
     font-size: 2,5ex;
     background-color: rgba(236, 216, 198, .4);
 }
+
+h2{
+    font-size: 4ex;
+    color:#5c5757;
+    text-align: center;
+}
+
 ul{
     list-style: none;
     background: rgba(236, 216, 198, .4);
@@ -25,11 +38,6 @@ ul li{
     padding-left: 2ex;
 }
 
-img.logo{
-    z-index: 999;
-    padding-top: 1.5ex;
-    padding-bottom: 1ex;
-}
 
 ul li a{
     display: block;
@@ -39,10 +47,7 @@ ul li a{
     text-align: center;
 }
 
-h2{
-    font-size: 4ex;
-    color:#5c5757;
-}
+
 
 ul li ul.dropdown li{
     display: block;
@@ -58,15 +63,16 @@ ul li ul.dropdown{
 }
 
 ul li a:hover{
-    color: #fff;
+    color: #966f49;
 }
 
 h3:hover{
-    color: #fff;
+    color: #966f49;
 }
 
 ul li:hover ul.dropdown{
     display: block;
+    background: rgba(236, 216, 198, .4);
 }
 
 ul.about_list{
@@ -78,13 +84,10 @@ ul.about_list{
 
 ul.about_list li{
     padding-top: 1ex;
-    padding-bottom: 1ex;
+    padding-bottom: 1ex;    
 }
 
-h3{
-    color:#454141;
-    font-size: 4ex;
-}
+
 
 p{
     position: relative;
@@ -99,5 +102,29 @@ img {
     border: 0,5ex solid white;
     margin-right: 1,5ex;
     position: relative;
-    }
+    margin-left: 1ex;
+    margin-top: 1ex;
+}
 
+h3.button{
+    text-align: right;
+    background-color: #113975;
+    border-radius: 1ex;
+    padding: 1ex 2ex;
+    margin-left: 0;
+    display: inline-block;
+}
+
+h3.button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+h3.button a:hover{
+    color:black
+}
+
+h3{
+    color:#454141;
+    font-size: 4ex;
+}
