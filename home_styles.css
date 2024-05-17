@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 img.logo{
@@ -11,21 +11,22 @@ img.logo{
 }
 
 body{
-    color: #616161;
+    color: #fff;
     font-family: PlusJakartaSans, sans-serif;
     font-size: 2,5ex;
-    background-color: rgba(236, 216, 198, .4);
+    background-color: #24252A;
 }
 
 h2{
     font-size: 4ex;
-    color:#5c5757;
-    text-align: center;
+    color:#fff;
+    text-align: left;
+    margin: 1ex;
 }
 
 ul{
     list-style: none;
-    background: rgba(236, 216, 198, .4);
+    background: #24252A;
     position: relative;
 }
 
@@ -42,7 +43,7 @@ ul li{
 ul li a{
     display: block;
     padding: 2ex 2,5ex;
-    color: #454141;
+    color: #fff;
     text-decoration: none;
     text-align: center;
 }
@@ -56,30 +57,37 @@ ul li ul.dropdown li{
 
 ul li ul.dropdown{
     width: 100%;
-    background: rgba(241, 208, 179, 0.4);
+    background: #24252A;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
 ul li a:hover{
-    color: #966f49;
+    color: rgba(0, 136, 169, 1);
+}
+
+ul li a.button:hover{
+    color:#fff;
 }
 
 h3:hover{
-    color: #966f49;
+    color: rgba(0, 136, 169, 1);
 }
 
 ul li:hover ul.dropdown{
     display: block;
-    background: rgba(236, 216, 198, .4);
+    background: #24252A;
 }
 
 ul.about_list{
     display: flex;
     flex-direction: column;
-    font-size: 4ex;
+    font-size: 3.5ex;
+    padding-right: 1ex;
     float: right;
+    border-radius: 1ex;
+    margin-bottom: 1ex;
 }
 
 ul.about_list li{
@@ -87,13 +95,13 @@ ul.about_list li{
     padding-bottom: 1ex;    
 }
 
-
-
 p{
     position: relative;
     text-indent: 5ex;
     font-size: 4ex;
+    color: #fff;
     float: right;
+    margin: 1ex;
 }
 
 img {
@@ -106,9 +114,18 @@ img {
     margin-top: 1ex;
 }
 
+img.first{
+    width: 450;
+    height: 350;
+}
+
+b{
+    color:rgba(0, 136, 169, 1);
+}
+
 h3.button{
     text-align: right;
-    background-color: #113975;
+    background-color: rgba(0, 136, 169, 1);
     border-radius: 1ex;
     padding: 1ex 2ex;
     margin-left: 0;
@@ -117,14 +134,36 @@ h3.button{
 
 h3.button a{
     text-decoration: none;
-    color: #fff;
 }
 
-h3.button a:hover{
-    color:black
+h3.button:hover{
+    background-color: rgba(0, 135, 169, 0.781);
+}
+
+ul.nav li{
+    color:#fff;
 }
 
 h3{
-    color:#454141;
+    color:#fff;
     font-size: 4ex;
 }
+
+ul.footer li a{
+    margin-right: 1ex;
+    font: 1ex;
+    color:#fff;
+}
+
+ul.footer li:hover{
+    color:rgba(0, 136, 169, 1);
+}
+
+ul.footer li a:hover{
+    color: rgba(0, 136, 169, 1);
+}
+
+footer{
+    margin-top: 85ex;
+}
+
