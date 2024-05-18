@@ -1,18 +1,27 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-
-ul{
-    list-style: none;
-    background: rgb(236, 216, 198);
-    position: relative;
+body{
+    background: #24252A;
 }
 
-ul li{
+
+.logo{
+    z-index: 999;
+
+}
+
+.nav{
+    list-style: none;
+    background: #24252A;
+    position: relative;
+}
+    
+.nav li{
     display: inline-block;
     position: relative;
     padding-top: 2.5ex;
@@ -20,48 +29,84 @@ ul li{
     padding-right: 2ex;
     padding-left: 2ex;
 }
-
-
-ul li a{
+    
+    
+.nav li a{
+    
     display: block;
     padding: 2ex 2,5ex;
-    color: #454141;
+    color: #fff;
     text-decoration: none;
     text-align: center;
 }
-
-
-
-ul li ul.dropdown li{
+    
+    
+    
+.nav li ul.dropdown li{
     display: block;
     font-size: 3,5ex;
 }
-
-ul li ul.dropdown{
+    
+.nav li ul.dropdown{
     width: 100%;
-    background: rgba(241, 208, 179, 0.4);
+    background: #24252A;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
-ul li a:hover{
-    color: #966f49;
+.nav:hover{
+    transition: 0.6s;
+    background-color: #26272b;
 }
 
+    
+.nav li a:hover{
+    
+    color: rgba(0, 136, 169, 1);
+    
+}
+    
+.nav li a.button:hover{
+
+    color:#fff;
+}
+    
 h3:hover{
-    color: #966f49;
+    background-color: #43444b;
+    color: rgba(0, 136, 169, 1);
+}
+    
+.nav li:hover ul.dropdown{
+    display: block;
+    background: #24252A;
 }
 
-ul li:hover ul.dropdown{
-    display: block;
-    background: rgb(236, 216, 198);
-}
+h3.button{
+    text-align: right;
+    background-color: rgba(0, 136, 169, 1);
+    border-radius: 1ex;
+    padding: 1ex 2ex;
+    margin-left: 0;
+    display: inline-block;
+    }
+    
+h3.button a{
+    text-decoration: none;
+    }
+    
+h3.button:hover{
+    background-color: rgba(0, 135, 169, 0.781);
+    }
+    
+ul.nav li{
+    color:#fff;
+    }
 
 .about{
     width: 100%;
-    padding: 78px 0px;
-    background-color: rgba(236, 216, 198, .4);
+    padding: 7ex 0ex;
+    background-color: #24252A;
 
 }
 
@@ -74,7 +119,7 @@ ul li:hover ul.dropdown{
 
 }
 .about-text{
-    width: 550px;
+    width: 77ex;
 }
 
 .main{
@@ -86,14 +131,14 @@ ul li:hover ul.dropdown{
     justify-content: space-around;
 }
 .about-text h1{
-    color: black;
+    color: white;
     font-size: 80px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 
 .about-text h5{
-    color: black;
+    color: white;
     font-size: 25px;
     text-transform: capitalize;
     margin-bottom: 25px;
@@ -101,10 +146,11 @@ ul li:hover ul.dropdown{
 }
 
 span{
-    color: blue;
+    color: rgba(0, 136, 169, 1);
 }
 .about-text p{
-    color: black;
+    position: relative;
+    color: white;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
@@ -113,7 +159,7 @@ span{
 }
 
 button{
-    background: blue;
+    background: rgba(0, 136, 169, 1);
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -124,22 +170,28 @@ button{
 }
 
 button:hover{
-    background: rgb(41, 83, 221);
-    border: 2px solid rgba(0, 0, 255, 0);
+    background: rgba(0, 136, 169, 0.8);
     cursor: pointer;
 
 
 }
 
 footer{
-    background-color: rgb(236, 216, 198);
+    background-color: #24252A;
+    padding-bottom: 4em;
+    
+}
+
+footer:hover{
+    transition: 0.6s;
+    background-color: #2b2c30;
 }
 .footerContainer{
     width: 100%;
-    padding: 70px 20px 20px ;
+    padding: 7ex 2ex 3ex ;
 }
 .footerNav{
-    margin: 10px 0;
+    margin: 2ex 0;
 }
 .footerNav ul{
     display: flex;
@@ -147,8 +199,8 @@ footer{
     list-style-type: none;
 }
 .footerNav ul li a{
-    color:black;
-    margin: 10px;
+    color:white;
+    margin: 1ex;
     text-decoration: none;
     font-size: 1.3em;
     opacity: 0.7;
@@ -159,17 +211,10 @@ footer{
     opacity: 1;
 }
 .footerBottom{
-    background-color: rgb(236, 216, 198);
-    padding: 20px;
+
+    padding: 3em;
     text-align: center;
 }
 .footerBottom p{
-    color: black;
-}
-.designer{
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    font-weight: 400;
-    margin: 0px 5px;
+    color: white;
 }
