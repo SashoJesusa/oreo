@@ -20,3 +20,15 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         event.preventDefault();
     }
 });
+
+function toggleList() {
+    var list = document.getElementById('itemList');
+    var button = document.getElementById('showListButton');
+    if (list.style.display === 'none') {
+        list.style.display = 'block';
+        button.textContent = 'Hide List';
+    } else {
+        list.style.display = 'none';
+        button.textContent = 'Achievements';
+    }
+}
