@@ -11,9 +11,6 @@ body{
     align-items: center;
 }
 
-
-    
-   
 .img_deg {
     
     
@@ -21,7 +18,6 @@ body{
     overflow: hidden; 
     float: right;
     border-radius: 4ex;
-    
     margin-right: 10em;
     max-height: 500ex;
 }
@@ -35,11 +31,8 @@ body{
     padding-top: 10em;
     padding-left: 13em;
     color: white;
-
 }
 
-
-    
 .text h1{
     font-size: 5ex;
     padding: 1ex;
@@ -60,7 +53,6 @@ body{
 
 .logo{
     z-index: 999;
-
 }
 
 .nav{
@@ -78,7 +70,6 @@ body{
     padding-left: 2ex;
 }
     
-    
 .nav li a{
     display: block;
     padding: 2ex 2,5ex;
@@ -86,8 +77,6 @@ body{
     text-decoration: none;
     text-align: center;
 }
-    
-    
     
 .nav li ul.dropdown li{
     display: block;
@@ -150,7 +139,7 @@ ul.nav li{
     list-style: none;
     list-style-type: none;
     margin-bottom: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     row-gap: 8px;
 } 
@@ -161,8 +150,7 @@ ul.nav li{
     position: relative;
     padding-left: 20px;
     margin-bottom: 10px;
-
-    }
+}
 
 .list li::before{
     color:white;
@@ -173,51 +161,66 @@ ul.nav li{
     width: 10px; 
     height: 1px; 
     background-color: white;
-    }
+}
 
-    footer{
-        background-color: #24252A;
-        padding-bottom: 4em;
-        
-    }
+footer{
+    background-color: #24252A;
+     padding-bottom: 4em;
+}
     
-    footer:hover{
-        transition: 0.6s;
-        background-color: #2b2c30;
-    }
-    .footerContainer{
-        width: 100%;
-        padding: 7ex 2ex 3ex ;
-    }
-    .footerNav{
-        margin: 2ex 0;
-    }
-    .footerNav ul{
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-    }
-    .footerNav ul li a{
-        color:white;
-        margin: 1ex;
-        text-decoration: none;
-        font-size: 1.3em;
-        opacity: 0.7;
-        transition: 0.4s;
+footer:hover{
+    transition: 0.6s;
+    background-color: #2b2c30;
+}
     
-    }
-    .footerNav ul li a:hover{
-        opacity: 1;
-    }
-    .footerBottom{
+.footerContainer{
+    width: 100%;
+    padding: 7ex 2ex 3ex ;
+}
     
-        padding: 1em;
-        text-align: center;
-    }
-    .footerBottom p{
-        color: white;
-    }
+.footerNav{
+    margin: 2ex 0;
+}
+    
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+    
+.footerNav ul li a{
+    color:white;
+    margin: 1ex;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+    
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+    
+.footerBottom{
+    padding: 1em;
+    text-align: center;
+}
+    
+.footerBottom p{
+    color: white;
+}
 
-    span{
-        color: rgba(0, 136, 169, 1);
-    }
+span{
+    color: rgba(0, 136, 169, 1);
+}
+
+.abouthim{
+    border-radius: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 136, 169, 1);
+    border: transparent;
+    width: 7em;
+    height: 3em;
+    font-size: 1em;
+    color: white;
+}
