@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: #24252A;
+}
+
+h1{
+    color:#fff;
+    padding-top: 1ex;
+    text-align: center;
+    font-size: 6ex;
+}
+
+h3{
+    color:#fff;
+    font-size: 4ex;
+}
+
+ul{
+    list-style: none;
+    background: #24252A;
+    position: relative;
+    margin-top: 0;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+    padding-top: 2.5ex;
+    padding-bottom: 2.5ex;
+    padding-right: 2ex;
+    padding-left: 2ex;
+}
+
+
+ul li a{
+    display: block;
+    padding: 2ex 2,5ex;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+img.logo{
+    z-index: 999;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+ul li ul.dropdown li{
+    display: block;
+    font-size: 3,5ex;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background: #24252A;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    color: rgba(0, 136, 169, 1);
+}
+
+ul li a.button:hover{
+    color:#fff;
+}
+
+h3:hover{
+    color: rgba(0, 136, 169, 1);
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+    background: #24252A;
+}
+
+h3.button{
+    text-align: right;
+    background-color: rgba(0, 136, 169, 1);
+    border-radius: 1ex;
+    border-color: black;
+    padding: 1ex 2ex;
+    margin-left: 0;
+    display: inline-block;
+}
+
+h3.button a{
+    text-decoration: none;
+}
+
+h3.button:hover{
+    background-color: rgba(0, 135, 169, 0.781);
+}
+
+input{
+    background-color: #fff;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 2ex;
+    padding: 1.6ex 1.6ex;
+    border-radius: 1ex;
+    border-color: black;
+    margin-bottom: 2ex;
+}
+
+
+textarea{
+    background-color: #fff;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 2ex;
+    padding: 1.6ex 1.6ex;
+    border-radius: 1ex;
+    border-color: black;
+    margin-bottom: 2.5ex;
+}
+
+input:focus-within{
+    outline: none;
+    border-color: rgba(0, 136, 169, 1);
+    border-width: 0.3ex;
+}
+
+textarea:focus-within{
+    outline: none;
+    border-color: rgba(0, 136, 169, 1);
+    border-width: 0.3ex;
+}
+
+button{
+    background-color: rgba(0, 136, 169, 1);
+    border-radius: 2ex;
+    border-color: black;
+    font-size: 2.2ex;
+    padding: 1ex 1.8ex;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+button:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
