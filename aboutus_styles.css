@@ -89,25 +89,24 @@ h3.button{
     padding: 1ex 2ex;
     margin-left: 0;
     display: inline-block;
-    }
+}
     
 h3.button a{
     text-decoration: none;
-    }
+}
     
 h3.button:hover{
     background-color: rgba(0, 135, 169, 0.781);
-    }
+}
     
 ul.nav li{
     color:#fff;
-    }
+}
 
 .about{
     width: 100%;
     padding: 7ex 0ex;
     background-color: #24252A;
-
 }
 
 .about img{
@@ -116,8 +115,8 @@ ul.nav li{
     border-radius: 30px;
     transition: .4s;
     float: left;
-
 }
+
 .about-text{
     width: 77ex;
 }
@@ -130,6 +129,7 @@ ul.nav li{
     align-items: center;
     justify-content: space-around;
 }
+
 .about-text h1{
     color: white;
     font-size: 80px;
@@ -155,7 +155,6 @@ span{
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
-
 }
 
 button{
@@ -172,14 +171,11 @@ button{
 button:hover{
     background: rgba(0, 136, 169, 0.8);
     cursor: pointer;
-
-
 }
 
 footer{
     background-color: #24252A;
     padding-bottom: 4em;
-    
 }
 
 footer:hover{
@@ -205,7 +201,6 @@ footer:hover{
     font-size: 1.3em;
     opacity: 0.7;
     transition: 0.4s;
-
 }
 .footerNav ul li a:hover{
     opacity: 1;
