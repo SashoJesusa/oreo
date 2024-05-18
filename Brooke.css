@@ -3,45 +3,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
   
 body{
-    background-color: rgba(236, 216, 198, .4);
+    background-color: #24252A;
     justify-content: center;
     align-items: center;
 }
-.container{
-    align-items: center;
-    width: 100%;}
-p{
-    
-    position: relative;
-    margin-bottom: 2em;
-    max-width: 50em;
- 
-    text-align: left;
-}
-img.image_dec {
-    
-    width: 35%;
+.image_dec{
+    width: 26%;
     overflow: hidden; 
     float: right;
     border-radius: 4ex;
-    border: 0.3ex solid white;
-    margin-right: 10ex;
+    margin-right: 10em;
     max-height: 500ex;
-    }
-.logo{
-    float: left;
-    z-index: 999;
-    height: 5%;
-    width: 10%;
-
+ }
+.links{
+    color: rgba(0, 136, 169, 1);
+    text-decoration: none;
 }
 
 .text{
     padding-top: 10em;
     padding-left: 13em;
+    color: white;
 
 }
 
@@ -51,65 +36,180 @@ img.image_dec {
     font-size: 5ex;
     padding: 1ex;
     width: 10ex;
-    }
+}
 .text h2{
     font-size: 5ex;
     margin-right: 10ex;
-    }
+}
 .text p{
+    position: relative;
+    margin-bottom: 2em;
+    text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
     font-size: 2.7ex;
     max-width: 43em;
-    }    
+}
 
-.navigation{
+.logo{
+    z-index: 999;
+
+}
+
+.nav{
     list-style: none;
-    background: rgb(236, 216, 198);
+    background: #24252A;
     position: relative;
-    }
+}
     
-.navigation li{
+.nav li{
     display: inline-block;
     position: relative;
     padding-top: 2.5ex;
     padding-bottom: 2.5ex;
     padding-right: 2ex;
     padding-left: 2ex;
-    }
+}
     
     
-.navigation li a{
+.nav li a{
     display: block;
     padding: 2ex 2,5ex;
-    color: #454141;
+    color: #fff;
     text-decoration: none;
     text-align: center;
-    }
+}
     
     
     
-.navigation li ul.dropdown li{
+.nav li ul.dropdown li{
     display: block;
     font-size: 3,5ex;
-    }
+}
     
-.navigation li ul.dropdown{
+.nav li ul.dropdown{
     width: 100%;
-    background: rgba(241, 208, 179, 0.4);
+    background: #24252A;
     position: absolute;
     z-index: 999;
     display: none;
-    }
+}
+
+.nav:hover{
+    background-color: #26272b;
+}
     
-.navigation li a:hover{
-    color: #966f49;
-    }
+.nav li a:hover{
+    color: rgba(0, 136, 169, 1);
+}
+    
+.nav li a.button:hover{
+    color:#fff;
+}
     
 h3:hover{
-    color: #966f49;
+    color: rgba(0, 136, 169, 1);
+}
+    
+.nav li:hover ul.dropdown{
+    display: block;
+    background: #24252A;
+}
+
+h3.button{
+    text-align: right;
+    background-color: rgba(0, 136, 169, 1);
+    border-radius: 1ex;
+    padding: 1ex 2ex;
+    margin-left: 0;
+    display: inline-block;
     }
     
-.navigation li:hover ul.dropdown{
-    display: block;
-    background: rgb(236, 216, 198);
+h3.button a{
+    text-decoration: none;
+    }
+    
+h3.button:hover{
+    background-color: rgba(0, 135, 169, 0.781);
+    }
+    
+ul.nav li{
+    color:#fff;
+    }
+
+.list {
+    max-width: 50em;
+    font-size: 2.7ex;
+    list-style: none;
+    list-style-type: none;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+} 
+    
+
+.list li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+
+    }
+
+.list li::before{
+    color:white;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px; 
+    height: 1px; 
+    background-color: white;
+    }
+
+    footer{
+        background-color: #24252A;
+        padding-bottom: 4em;
+        
+    }
+    
+    footer:hover{
+        transition: 0.6s;
+        background-color: #2b2c30;
+    }
+    .footerContainer{
+        width: 100%;
+        padding: 7ex 2ex 3ex ;
+    }
+    .footerNav{
+        margin: 2ex 0;
+    }
+    .footerNav ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+    .footerNav ul li a{
+        color:white;
+        margin: 1ex;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.4s;
+    
+    }
+    .footerNav ul li a:hover{
+        opacity: 1;
+    }
+    .footerBottom{
+    
+        padding: 1em;
+        text-align: center;
+    }
+    .footerBottom p{
+        color: white;
+    }
+
+    span{
+        color: rgba(0, 136, 169, 1);
     }
