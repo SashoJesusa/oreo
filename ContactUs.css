@@ -13,6 +13,7 @@ body{
     color: rgba(0, 136, 169, 1);
 }
 
+
 h1{
     color:#fff;
     padding-top: 1ex;
@@ -25,14 +26,14 @@ h3{
     font-size: 4ex;
 }
 
-ul{
+.nav{
     list-style: none;
     background: #24252A;
     position: relative;
     margin-top: 0;
 }
 
-ul li{
+.nav li{
     display: inline-block;
     position: relative;
     padding-top: 2.5ex;
@@ -42,7 +43,7 @@ ul li{
 }
 
 
-ul li a{
+.nav li a{
     display: block;
     padding: 2ex 2,5ex;
     color: #fff;
@@ -155,3 +156,48 @@ button:hover{
     cursor: pointer;
 }
 
+form{
+    padding-bottom: 10em;
+}
+
+footer{
+    padding-top: 3em;
+    background-color: #24252A;
+    padding-bottom: 1em;
+}
+
+footer:hover{
+    transition: 0.6s;
+    background-color: #2b2c30;
+}
+.footerContainer{
+    width: 100%;
+    padding: 7ex 2ex 3ex ;
+}
+.footerNav{
+    margin: 2ex 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 1ex;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+
+    padding: 3em;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
