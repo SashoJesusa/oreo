@@ -2,9 +2,9 @@
     <head>
         <title>Yarborough Contact Form</title>
         <link rel="stylesheet" href="ContactUs.css">
-        <script src="functions.js"></script>
+        <script> src="functions.js"</script>
     </head>
-    <body>
+<body>
                 <ul class="nav">
                     <li><img class="logo" src="logo.png" height="50" width="250"></li>
                     <li><h3 class="nav"><a href="home.html">Home</a></h3></li>
@@ -30,19 +30,49 @@
                 <button type="submit">Send Message</button>
                 </form>
 
-                <footer>
-                    <div class="footerContainer">
-                        <div class="footerNav">
-                            <ul ><li><a href="home.html">Home</a></li>
-                                <li><a href="aboutus.html">About Us</a></li>
-                                <li><a href="ContactUs.html">Contact Us</a></li>
-                            </ul>
+                <h1>Frequently Asked Questions</h1>
+                <button class="accordion">What is yours working shedule?</button>
+                       <div class="panel">
+                            <p>Our company is open Monday through Friday from 8:00 a.m. to 7:00 p.m.</p>
                         </div>
+
+                <button class="accordion">How can I schedule a consultation?</button>
+                        <div class="panel">
+                            <p>You can schedule a consultation by contacting us through our website or calling our office.</p>
+                         </div>
+                <button class="accordion">How much does a follow-up consultation cost?</button>
+                        <div class="panel">
+                             <p>It depends what the next consultation will be.</p>
+                         </div>
+
+                 <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    for (var i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                    }
+                 });
+                }
+                </script>
+
+            <footer>
+                 <div class="footerContainer">
+                    <div class="footerNav">
+                        <ul ><li><a href="home.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                         
-                    </div>
-                    <div class="footerBottom">
+                </div>
+                <div class="footerBottom">
                         <p>Copyright &copy;2024; Designed by <span class="designer">Oreo</span></p>
-                    </div>
-                </footer>  
-    </body>
+                </div>
+            </footer>  
+</body>
 </html>
