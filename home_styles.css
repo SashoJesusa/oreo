@@ -25,13 +25,13 @@ h2{
     margin: 1ex;
 }
 
-ul{
+.nav{
     list-style: none;
     background: #24252A;
     position: relative;
 }
 
-ul li{
+.nav li{
     display: inline-block;
     position: relative;
     padding-top: 2.5ex;
@@ -41,7 +41,7 @@ ul li{
 }
 
 
-ul li a{
+.nav li a{
     display: block;
     padding: 2ex 2,5ex;
     color: #fff;
@@ -51,12 +51,12 @@ ul li a{
 
 
 
-ul li ul.dropdown li{
+.nav li ul.dropdown li{
     display: block;
     font-size: 3,5ex;
 }
 
-ul li ul.dropdown{
+.nav li ul.dropdown{
     width: 100%;
     background: #24252A;
     position: absolute;
@@ -64,15 +64,15 @@ ul li ul.dropdown{
     display: none;
 }
 
-ul li a:hover{
+.nav li a:hover{
     color: rgba(0, 136, 169, 1);
 }
 
-ul li a.button:hover{
+.nav li a.button:hover{
     color:#fff;
 }
 
-h3:hover{
+.nav h3:hover{
     color: rgba(0, 136, 169, 1);
 }
 
@@ -96,7 +96,7 @@ ul.about_list li{
     padding-bottom: 1ex;    
 }
 
-p{
+.text{
     position: relative;
     text-indent: 5ex;
     font-size: 4ex;
@@ -150,21 +150,45 @@ h3{
     font-size: 4ex;
 }
 
-ul.footer li a{
-    margin-right: 1ex;
-    font: 1ex;
-    color:#fff;
+footer{
+    padding-top: 40em;
+    background-color: #24252A;
+    padding-bottom: 4em;
 }
 
-ul.footer li:hover{
-    color:rgba(0, 136, 169, 1);
+
+.footerContainer{
+    width: 100%;
+    padding: 7ex 2ex 3ex ;
+}
+.footerNav{
+    margin: 2ex 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 1ex;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+
+    padding: 3em;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
 }
 
-ul.footer li a:hover{
+span{
     color: rgba(0, 136, 169, 1);
 }
-
-footer{
-    margin-top: 85ex;
-}
-
